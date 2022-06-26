@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/91cc003660.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="side-nav" class="text-center  ">
+    <div class="container-1 p-2">
+        <div class="image">
+            <img src="images/logo.png" alt="">
+            </div>
+            <div class="open-nav">
+                <i class="fa-solid fa-align-justify"></i>
+            </div>
+            <div class="social-icon">
+                <div class="global">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="share">
+                    <i class="fas fa-share-alt"></i>
+    
+                </div>
+            </div>
+    </div>
+    
+    <div class="container-2 position-relative  ">
+        <div class="open-nav-ul pt-3 ms-0 ">
+            <ul>
+                <li><a href="#">Now playing</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Upcoming</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="open-nav-icon ">
+            <a href="#" class="p-2">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="p-2">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="p-2">                
+                <i class="fa-solid fa-globe"></i>
+            </a>
+            <div><span class="copyright" >
+                Copyright Â© 2019 All Rights Reserved
+            </span></div>
+        </div>
+    </div>
+
+</section>
+  <section id="input" class="pt-5 pb-5 ms-5">
+    <div class="container w-75 text-center">
+        <div class="row">
+            <div class="col-md-6 w-50">
+                <input  class="form-control form" type="text" name="" id="" placeholder="Get movies by word...">
+
+            </div>
+            <div class="col-md-6 w-50">
+                <input class="form-control form" type="text" name="" id="" placeholder="search...">
+
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="container ">
+        <div class="row  " id="rowData">
+            
+           
+
+        </div>
+    
+    </div>
+
+    <section id="contact">
+        
+      <div class="container p-5 mx-auto ">
+          <div class="row ">
+              <h2>ContacUs...</h2>
+              <div class="col-md-6 mb-3 text-center">
+                  <input class="form-control form invalid" type="text" placeholder="Enter Your Name" id="name">
+                  <input   class="form-control mt-0 input-special d-none" type="text" placeholder="enter your  name" id="nameValidation" >
+                  
+              </div>
+              <div class="col-md-6 mb-3">
+                  <input class="form-control form" type="email" placeholder="Enter Your Email" id="email" required>
+                  <p class="d-none" id="emailValidation">your email should contain @</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                  <input class="form-control form" type="number" placeholder="Enter Phone" id="phone">
+                  <p class="d-none" id="numberValidation">enter valid number</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                  <input class="form-control form" type="text" placeholder="Enter Age" id="age">
+                  <p class="d-none" id="ageValidation">enter your age</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                  <input class="form-control form" type="text" placeholder="Enter Password" id="password">
+                  <p class="d-none" id="passwordValidation">at least 8 letters</p>
+              </div>
+              <div class="col-md-6 mb-3">
+                  <input class="form-control form" type="text" placeholder="Enter Repassword" id="rePassword">
+                  <p class="d-none" id="rePasswordValidation">at least 8 letters</p>
+
+              </div>
+          </div>
+          <button class="btn btn-outline-danger mt-5 ">submit</button>
+      </div>
+      
+  </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
