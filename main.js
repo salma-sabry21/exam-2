@@ -1,25 +1,20 @@
 //side-nav//
-/*let width = $('.open-nav-ul').innerWidth()
- //console.log(width)   250px 
-$(".openNav").click(function(){
-    if($('open-nav-ul').css('left') =='0px'){
-        $('.open-nav-ul').animate({left:`-${width}`},50)
+let width = $('#side-nav').innerWidth()
+$('#side-nav').css({left :-`${width}`})
+$('.bar').click(function(){
+    let width = $('#side-nav').innerWidth()
+    if($('#side-nav').css('left') =='0px'){
+        $('#side-nav').animate({left: -`${width}`},500)
+        //$('.bar').classList.replace('fa-align-justify','fa-xmark')
+        
     }
     else{
-        $('.open-nav-ul').animate({left:`${width}`},50)
+        $('#side-nav').animate({left: '0px'},500)
+        //$('.bar').classList.replace('fa-xmark','fa-align-justify')
 
     }
 })
 
-$(".openNav").click(function(){
-    $('.open-nav-ul').animate({left:`-${width}`},50)
-})*/
-$('.openNav').click(function(){
-    $('open-nav-ul').css('display','block')
-    $('#side-nav').css({left : '250px'})
-    //console.log(openNav)
-
-})
 //regex//
 var nameInput =document.getElementById('name');
 var emailInput =document.getElementById('email');
@@ -124,18 +119,9 @@ rePasswordInput.addEventListener('keyup',function(){
         rePasswordValidation.classList.replace('d-none','d-block')
     }
 });
-
-
-
-
-
-
-
-
-
-
 //get apis//
-var displayPosts;   //arrays = displayPosts , displayItems=display  , detData=getTranding
+//trending//
+var displayPosts;  
  async function getTranding(){
     var response =await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=1240c5d0aeab086b0239c0a37c83c03c`);
     var finalResult =await response.json();
@@ -143,7 +129,7 @@ var displayPosts;   //arrays = displayPosts , displayItems=display  , detData=ge
     //console.log(displayPosts)
     await displayItems()
   
- //original_title   overview  release_date  vote_average
+
 }
 getTranding()
 
@@ -168,6 +154,10 @@ function displayItems(){
     }
     document.getElementById('rowData').innerHTML = cartona;
 }
+
+getTranding()
+
+
 async function hello(){
  await   getTranding()
 }
